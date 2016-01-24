@@ -9,18 +9,19 @@ class OpTree(object):
         self.a=a
         self.b=b
         self.value = None
+        self.grad = None
     
     def __add__(self, other):
         return OpTree.build("add",self,other)
     def __mul__(self, other):
         return OpTree.build("mul",self,other)
     def __radd__(self, other):
-        return OpTree.build("radd",other,self)
+        return OpTree.build("add",other,self)
     def __rmul__(self, other):
-        return OpTree.build("rmul",other,self)
+        return OpTree.build("mul",other,self)
     
     def _assign(self, value):
-        return OpTree.build("assign",self,other)
+        return OpTree.build("assign", value)
     
     
     def __str__(self):

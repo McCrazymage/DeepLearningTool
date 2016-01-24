@@ -22,4 +22,10 @@ if __name__ == '__main__':
     f = a*d+b*c
     print f,type(f)
     fun = function([a,b,c,d],[f])
-    print fun.calc([2,3,4,5])
+    
+    x1 = np.ones((3,5))
+    x2 = 2*np.ones((3,5))
+    x3 = 3*np.ones((3,5))
+    x4 = 4*np.ones((3,5))
+    
+    print fun.calc([x2,x3,x4,x1])
