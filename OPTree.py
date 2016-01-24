@@ -19,6 +19,8 @@ class OpTree(object):
         return OpTree.build("add",other,self)
     def __rmul__(self, other):
         return OpTree.build("mul",other,self)
+    def dot(self, other):
+        return OpTree.build("dot",self,other)
     
     def _assign(self, value):
         return OpTree.build("assign", value)

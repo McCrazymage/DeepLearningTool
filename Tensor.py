@@ -20,3 +20,5 @@ class Tensor(object):
         return OpTree.build("radd",other,self)
     def __rmul__(self, other):
         return OpTree.build("rmul",other,self)
+    def dot(self, other):
+        return OpTree.build("dot",self,other)

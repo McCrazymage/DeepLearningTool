@@ -19,13 +19,15 @@ if __name__ == '__main__':
     c = Tensor('c')
     d = Tensor('d')
     
-    f = a*d+b*c
+    f = a.dot(b)+c
+    g = a*b+d*c
     print f,type(f)
     fun = function([a,b,c,d],[f])
     
-    x1 = np.ones((3,5))
-    x2 = 2*np.ones((3,5))
-    x3 = 3*np.ones((3,5))
-    x4 = 4*np.ones((3,5))
+    x1 = np.ones((1,5))
+    x2 = 2*np.ones((5,1))
+    x3 = 3*np.ones((1,1))
+    x4 = 4*np.ones((2,1))
     
-    print fun.calc([x2,x3,x4,x1])
+    print fun.calc([x1,x2,x3,x4])
+    print fun.gradient([x1,x2,x3,x4])

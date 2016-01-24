@@ -22,6 +22,11 @@ class add(op):
         return a+b
     
     
+    @staticmethod
+    def gradient(g,a,b):
+        return g,g
+    
+    
 class mul(op):
     
     def __init__(self):
@@ -30,3 +35,21 @@ class mul(op):
     @staticmethod
     def calc(a,b):
         return a*b
+    
+    @staticmethod
+    def gradient(g,a,b):
+        return g*b,g*a
+    
+    
+class dot(op):
+    
+    def __init__(self):
+        pass
+    
+    @staticmethod
+    def calc(a,b):
+        return a.dot(b)
+    
+    @staticmethod
+    def gradient(g,a,b):
+        return g.dot(b.T),a.T.dot(g)
