@@ -12,7 +12,7 @@ I implement the models with [numpy](http://www.numpy.org/).
 ##Implemented operations
 addition,multiplication,dot
 
-##Plan to Implement
+##Planed to Implement
 exponent,logarithm,division,convolution etc.
 
 ###contact me
