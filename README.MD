@@ -16,4 +16,4 @@ addition,multiplication,dot
 exponent,logarithm,division,convolution etc.
 
 ###contact me
-Email: qi.li@pku.edu.cn
+Email: qi.li7@mail.mcgill.ca
