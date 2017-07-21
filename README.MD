@@ -15,5 +15,5 @@ addition,multiplication,dot
 ## Planed to Implement
 exponent,logarithm,division,convolution etc.
 
-### Contact
+## Contact
 Email: qi.li7@mail.mcgill.ca
