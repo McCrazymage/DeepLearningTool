@@ -1,19 +1,19 @@
-#Deep Learning Tool
+# Deep Learning Tool
 
 
-##Purpose
+## Purpose
 
 This project is an implementation of automatically calculating derivate given a calculation graph. It is just to understand how automatic derivation calculation works.
 
-##Dependencies
+## Dependencies
 
 I implement the models with [numpy](http://www.numpy.org/).
 
-##Implemented operations
+## Implemented operations
 addition,multiplication,dot
 
-##Planed to Implement
+## Planed to Implement
 exponent,logarithm,division,convolution etc.
 
-###Contact
+### Contact
 Email: qi.li7@mail.mcgill.ca
